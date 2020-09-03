@@ -1,0 +1,124 @@
+/* reset css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul li {
+    list-style: none;
+}
+
+input, button {
+    outline: none;
+}
+
+/* styles */
+
+body {
+    background: #eee;
+}
+
+.search-wrap {
+    margin: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+@media (min-width: 500px) {
+    .search-wrap {
+        max-width: 400px;
+        margin: 60px auto 100px auto;
+    }
+}
+
+.search-wrap>input {
+    width: 100%;
+    margin-right: 10px;
+    height: 40px;
+    padding: 0 10px;
+    border: 1px solid #DDD;
+    border-radius: 4px;
+}
+
+.search-wrap>button {
+    white-space: nowrap;
+    padding: 0 28px;
+    border: none;
+    border-radius: 4px;
+    background: #0282B9;
+    color: white;
+    font-size: 16px;
+}
+
+.nav-list {
+    margin: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.nav-list>li {
+    width: 48%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: white;
+    border: 1px solid #DDD;
+    border-radius: 4px;
+    padding: 20px 0;
+    position: relative;
+    cursor: pointer;
+    margin-bottom: 15px;
+}
+@media (min-width: 500px) {
+    .nav-list {
+        max-width: 800px;
+        margin-left: auto;
+        margin-right: auto;
+        justify-content: flex-start;
+    }
+    .nav-list li {
+        width: 160px;
+        margin-right: 20px;
+    }
+}
+.nav-list .logo {
+    width: 64px;
+    height: 64px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 64px;
+    text-transform: uppercase;
+}
+.nav-list .hostname {
+    max-width: 80%;
+    font-size: 14px;
+    margin-top: 4px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.nav-list .del-wrap {
+    position: absolute;
+    top: 4px;
+    right: 10px;
+}
+.nav-list .del-wrap .icon {
+    width: 12px;
+    height: 12px;
+}
+.nav-list .icon-wrap {
+    width: 64px;
+    height: 64px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav-list .icon-wrap .icon {
+    width: 56px;
+    height: 56px;
+}
